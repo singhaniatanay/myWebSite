@@ -325,7 +325,7 @@ ul#nav li.current a { color: #F06000; }
    border-radius: 3px 0 0 3px;
 }
 
-.ml {
+.mystyleml {
   	width: 80%;
   	-moz-animation: ml 2s ease;
   	-webkit-animation: ml 2s ease;

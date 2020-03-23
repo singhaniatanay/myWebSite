@@ -270,7 +270,7 @@ on a comprised network.
 				<div class="bars">
 
 				   <ul class="skills">
-					   <li><span class="bar-expand ml"></span><em>Machine Learning</em></li>
+					   <li><span class="bar-expand ml" id = "effectml"></span><em>Machine Learning</em></li>
                   <li><span class="bar-expand illustrator"></span><em>Python</em></li>
 						<li><span class="bar-expand wordpress"></span><em>Java</em></li>
 						<li><span class="bar-expand css"></span><em>Android App Development</em></li>
@@ -387,7 +387,7 @@ on a comprised network.
                   </div>
           		</div> <!-- item end -->
 
-               <div class="columns portfolio-item">
+              <!--  <div class="columns portfolio-item">
                   <div class="item-wrap">
 
                      <a href="#modal-06" title="">
@@ -402,7 +402,7 @@ on a comprised network.
                      </a>
 
                   </div>
-          		</div> <!-- item end -->
+          		</div> item end -->
 
                <div class="columns portfolio-item">
                   <div class="item-wrap">
@@ -1010,7 +1010,16 @@ emergency services and the owner via SMS and a call whenever there is a break-in
    <script src="js/jquery.fittext.js"></script>
    <script src="js/magnific-popup.js"></script>
    <script src="js/init.js"></script>
+<script>
+window.onscroll = function() {myFunction()};
 
+function myFunction() {
+  if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
+   var element = document.getElementById("effectml");
+  element.classList.add("mystyleml");
+  }
+}
+</script>
 </body>
 
 </html>
