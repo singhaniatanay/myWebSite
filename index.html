@@ -21,7 +21,12 @@
 	<link rel="stylesheet" href="css/layout.css">
    <link rel="stylesheet" href="css/media-queries.css">
    <link rel="stylesheet" href="css/magnific-popup.css">
-
+   <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+   <style type="text/css">
+      #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+      /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+         We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+   </style>
    <!-- Script
    ================================================== -->
 	<script src="js/modernizr.js"></script>
@@ -270,13 +275,13 @@ on a comprised network.
 				<div class="bars">
 
 				   <ul class="skills">
-					   <li><span class="bar-expand ml" id = "effectml"></span><em>Machine Learning</em></li>
-                  <li><span class="bar-expand illustrator"></span><em>Python</em></li>
-						<li><span class="bar-expand wordpress"></span><em>Java</em></li>
-						<li><span class="bar-expand css"></span><em>Android App Development</em></li>
-						<li><span class="bar-expand html5"></span><em>Data Structure & Algo</em></li>
-                  <li><span class="bar-expand jquery"></span><em>SQL</em></li>
-                  <li><span class="bar-expand css"></span><em>Probability and Statistics</em></li>
+					   <li><span class="bar-expand" id = "ml"></span><em>Machine Learning</em></li>
+                  <li><span class="bar-expand" id = "illustrator"></span><em>Python</em></li>
+						<li><span class="bar-expand" id = "wordpress"></span><em>Java</em></li>
+						<li><span class="bar-expand" id = "css"></span><em>Android App Development</em></li>
+						<li><span class="bar-expand" id = "html5"></span><em>Data Structure & Algo</em></li>
+                  <li><span class="bar-expand" id = "jquery"></span><em>SQL</em></li>
+                  <li><span class="bar-expand" id = "css1"></span><em>Probability and Statistics</em></li>
 
 					</ul>
 
@@ -908,47 +913,37 @@ emergency services and the owner via SMS and a call whenever there is a break-in
             <div class="eight columns">
 
                <!-- form -->
-               <form action="" method="post" id="contactForm" name="contactForm">
-					<fieldset>
 
-                  <div>
-						   <label for="contactName">Name <span class="required">*</span></label>
-						   <input type="text" value="" size="35" id="contactName" name="contactName">
-                  </div>
+               <!-- <form action="" method="post" id="contactForm" name="contactForm"> -->
 
-                  <div>
-						   <label for="contactEmail">Email <span class="required">*</span></label>
-						   <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
-                  </div>
-
-                  <div>
-						   <label for="contactSubject">Subject</label>
-						   <input type="text" value="" size="35" id="contactSubject" name="contactSubject">
-                  </div>
-
-                  <div>
-                     <label for="contactMessage">Message <span class="required">*</span></label>
-                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
-                  </div>
-
-                  <div>
-                     <button class="submit">Submit</button>
-                     <span id="image-loader">
-                        <img alt="" src="images/loader.gif">
-                     </span>
-                  </div>
-
-					</fieldset>
-				   </form> <!-- Form End -->
-
-               <!-- contact-warning -->
-               <div id="message-warning"> Error boy</div>
-               <!-- contact-success -->
-				   <div id="message-success">
-                  <i class="fa fa-check"></i>Your message was sent, thank you!<br>
-				   </div>
-
+					<!-- <fieldset> -->
+<div>
+         <form action="https://tech.us19.list-manage.com/subscribe/post?u=5fea67d8b3c160fea8a4570c1&amp;id=5705611324" method="post" id="contactForm" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+         <div >
+            <div class="mc-field-group">
+               <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+               </label>
+               <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
             </div>
+            <div class="mc-field-group">
+            <label for="mce-FNAME">First Name </label>
+            <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+            </div>
+            <div class="mc-field-group">
+               <label for="mce-LNAME">Last Name </label>
+               <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+            </div>
+            <div class="mc-field-group">
+               <label for="mce-MMERGE3">Message </label>
+               <input type="text" value="" name="MMERGE3" class="" id="mce-MMERGE3">
+            </div>
+   
+             <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_5fea67d8b3c160fea8a4570c1_5705611324" tabindex="-1" value=""></div>
+             <div class="clear"><input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+         </div>
+      </form>
+</div>
+
 
 
             <aside class="four columns footer-widgets">
@@ -1014,12 +1009,29 @@ emergency services and the owner via SMS and a call whenever there is a break-in
 window.onscroll = function() {myFunction()};
 
 function myFunction() {
-  if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
-   var element = document.getElementById("effectml");
-  element.classList.add("mystyleml");
+   console.log($(window).scrollTop());
+  if (document.body.scrollTop >= 2165 || document.documentElement.scrollTop >= 2165) {
+   var element = document.getElementById("ml");
+  element.classList.add("ml");
+  var element1 = document.getElementById("illustrator");
+  element1.classList.add("illustrator");
+  var element2 = document.getElementById("wordpress");
+  element2.classList.add("wordpress");
+  var element3 = document.getElementById("css");
+  element3.classList.add("css");
+  var element4 = document.getElementById("html5");
+  element4.classList.add("html5");
+  var element5 = document.getElementById("jquery");
+  element5.classList.add("jquery");
+  var element6 = document.getElementById("css1");
+  element6.classList.add("css");
+  
+
   }
 }
 </script>
+
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 </body>
 
 </html>

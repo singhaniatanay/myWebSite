@@ -179,7 +179,7 @@ ul#nav li a {
 }
 
 ul#nav li a:active { background-color: transparent !important; }
-ul#nav li.current a { color: #F06000; }
+ul#nav li.current a { color: #409675; }
 
 
 /* ------------------------------------------------------------------ */
@@ -325,7 +325,7 @@ ul#nav li.current a { color: #F06000; }
    border-radius: 3px 0 0 3px;
 }
 
-.mystyleml {
+.ml {
   	width: 80%;
   	-moz-animation: ml 2s ease;
   	-webkit-animation: ml 2s ease;
